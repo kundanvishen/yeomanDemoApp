@@ -76,8 +76,6 @@ mg.connect(function (db) {
     function reportAndExit(processedCount, errorCount) {
       var successCount = processedCount - errorCount;
 
-      console.log();
-
       if (processedCount === 0) {
         console.log(chalk.yellow('No users were found.'));
       } else {
